@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- you can just the grab the cdn and writhe basic logic of vue application -->
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello there I am parimal !</h1>
+
+  <div id="app">
+    {{title}} - {{age}}
+
+    <!-- "v-on" is a directive -->
+    <br>
+    <button v-on:click="age++">Increase the age!</button>
+    <button v-on:click="age--">Decrease the age!</button>
+
+    <!-- @click is a shortcut fot he "v-on:click" directive -->
+    <button @click="changeStatement">Change the statement</button>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
