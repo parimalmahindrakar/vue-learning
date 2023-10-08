@@ -22,6 +22,19 @@
 
     <!-- @click is a shortcut fot he "v-on:click" directive -->
     <button @click="changeStatement">Change the statement</button>
+
+    <!-- conditional rendering ! -->
+    <!-- you have use the v-if directive ! -->
+    <div v-if="toShow">
+      <h1>Here, it is shown after the toShow is set to true !</h1>
+    </div>
+    <br>
+    <button @click="toShowDiv">
+      <!-- usage of the if and else in vue js while rendering the page -->
+      <span v-if="toShow">Hide</span>
+      <span v-else>Show</span>
+    </button>
+
   </div>
 
   <script src="./app.js"></script>
